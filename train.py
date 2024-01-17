@@ -13,7 +13,7 @@ import datetime
 from torch.utils.data.sampler import SubsetRandomSampler
 from datasets import Images_Dataset, Images_Dataset_folder
 import cv2
-from model.DDSC import DDSC_Net
+from models.DDSC import DDSC_Net
 # from model.DDSC_simple import XNet
 
 from torch.utils.tensorboard import SummaryWriter
