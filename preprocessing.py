@@ -13,7 +13,7 @@ import datetime
 from torch.utils.data.sampler import SubsetRandomSampler
 from read_testdata import Images_Dataset, Images_Dataset_folder_pre
 import cv2
-from model.DDSC_simple import DDSC_Net
+from models.DDSC_simple import DDSC_Net
 
 def set_seed(seed=1):
     random.seed(seed)
