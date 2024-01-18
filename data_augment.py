@@ -1,3 +1,5 @@
+import random
+
 import numpy as np
 import cv2
 import os
@@ -8,10 +10,10 @@ def return_list(data_path,data_type):
     file_list = [file for file in os.listdir(data_path) if file.lower().endswith(data_type)]
     return file_list
 
-def contrast_img(img,c,b): #定义亮度调节函数
-    blank = np.zeros([rows,cols,channels],img.dtype)
-    dst = cv2.addWeighted(img,c,blank,1-c,b)
-    return dst
+# def contrast_img(img,c,b): #定义亮度调节函数
+#     blank = np.zeros([rows,cols,channels],img.dtype)
+#     dst = cv2.addWeighted(img,c,blank,1-c,b)
+#     return dst
 
 def SaltAndPepper(src,percetage):   #定义添加椒盐噪声的函数
     SP_NoiseImg=src

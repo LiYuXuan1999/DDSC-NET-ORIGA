@@ -19,7 +19,7 @@ class Images_Dataset(Dataset):
     Output:
         sample : Dict of images and labels"""
 
-    def __init__(self, images_dir, transformI = None):
+    def __init__(self,labels_dir,images_dir, transformI = None):
 
         self.labels_dir = labels_dir
         self.images_dir = images_dir
